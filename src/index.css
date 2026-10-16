@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-script: 'Great Vibes', cursive;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #0c070a;
+    color: #fce7f3;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  html, #root {
+    touch-action: manipulation;
+  }
+}
+
+.font-serif-romantic {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-script-romantic {
+  font-family: 'Great Vibes', cursive;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(15, 10, 14, 0.6);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(244, 63, 94, 0.35);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(244, 63, 94, 0.6);
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 15px rgba(244, 63, 94, 0.6)) drop-shadow(0 0 35px rgba(251, 113, 133, 0.4));
+  }
+  50% {
+    filter: drop-shadow(0 0 25px rgba(244, 63, 94, 0.85)) drop-shadow(0 0 55px rgba(251, 113, 133, 0.6));
+  }
+}
+
+.glow-romantic {
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+

@@ -1,0 +1,6 @@
+{
+  "name": "Tulip Bloom - 1st Year Anniversary",
+  "description": "An interactive 10-step 3D anniversary web experience with Three.js, GSAP, and Tailwind CSS celebrating love, memories, and infinite blooms.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
